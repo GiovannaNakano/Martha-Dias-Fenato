@@ -1158,7 +1158,7 @@ h3 {
 
 
 .menu a:hover::after,
-.menu a.is-active::after {
+.menu a.is-open::after {
 
 
     width: 100%;
@@ -1170,7 +1170,7 @@ h3 {
 
 
 
-.menu a.is-active {
+.menu a.is-open {
 
 
     color: var(--primary);
@@ -2837,123 +2837,168 @@ background: var(--background-alt);
     }
 
 
-    /* --------------------------------------------------------------------------
-       HEADER
-    -------------------------------------------------------------------------- */
+ /* --------------------------------------------------------------------------
+   HEADER
+-------------------------------------------------------------------------- */
 
-    .header__inner {
-        height: var(--header-height);
-    }
+.header__inner {
+    height: var(--header-height);
+}
 
-    .nav {
-        justify-content: space-between;
-        gap: 0;
-        padding: 14px 6%;
-    }
+.nav {
+    justify-content: space-between;
+    gap: 0;
+    padding: 14px 6%;
+}
 
-    .logo {
-        font-size: 1.45rem;
-    }
+.logo {
+    font-size: 1.45rem;
+}
 
-    .logo img {
-        height: 38px;
-    }
+.logo img {
+    height: 38px;
+}
 
-    .menu-toggle {
-        display: flex;
+.menu-toggle {
+    display: flex;
 
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-        width: 44px;
-        height: 44px;
+    width: 44px;
+    height: 44px;
 
-        flex-shrink: 0;
-    }
+    flex-shrink: 0;
 
-    /*
-       Menu mobile.
-       Mantido com .active porque é a classe usada no seu JS atual.
-    */
+    background: none;
+    border: none;
 
-    .menu {
-        position: fixed;
+    font-size: 1.6rem;
 
-        top: var(--header-height);
-        right: 6%;
-        left: auto;
+    cursor: pointer;
+}
 
-        width: 230px;
 
-        padding: 30px 20px;
+/* --------------------------------------------------------------------------
+   MENU MOBILE
+-------------------------------------------------------------------------- */
 
-        flex-direction: column;
-        align-items: flex-start;
+.header__nav {
+    position: fixed;
 
-        gap: 20px;
+    top: var(--header-height);
+    right: 6%;
+    left: auto;
 
-        background: rgba(250, 248, 245, .98);
+    width: 230px;
 
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
+    padding: 30px 20px;
 
-        border-radius: 22px;
+    background: rgba(250, 248, 245, .98);
 
-        box-shadow:
-            0 20px 40px rgba(0, 0, 0, .12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+    border-radius: 22px;
 
-        transform: translateY(-10px);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, .12);
 
-        transition:
-            opacity .3s ease,
-            visibility .3s ease,
-            transform .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 
-        z-index: 1000;
-    }
+    transform: translateY(-10px);
 
-    .menu.active {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    transition:
+        opacity .3s ease,
+        visibility .3s ease,
+        transform .3s ease;
 
-        transform: translateY(0);
-    }
+    z-index: 1000;
+}
 
-    .menu a {
-        font-size: 1.05rem;
-    }
 
-    .menu a::after {
-        bottom: -6px;
-    }
+/* MENU ABERTO */
 
-    /*
-       Botão da header menor.
-    */
+.header__nav.is-open {
+    opacity: 1;
 
-    .header .btn,
-    .nav .btn {
-        width: auto;
+    visibility: visible;
 
-        min-height: 0;
+    pointer-events: auto;
 
-        padding: 9px 14px;
+    transform: translateY(0);
+}
 
-        font-size: .82rem;
-    }
 
-    .menu .btn {
-        width: 100%;
-        max-width: 280px;
+.menu {
+    display: flex;
 
-        margin-top: 10px;
-    }
+    flex-direction: column;
+    align-items: flex-start;
 
+    gap: 20px;
+}
+
+
+.menu a {
+    font-size: 1.05rem;
+}
+
+
+.menu a::after {
+    bottom: -6px;
+}
+
+
+/* --------------------------------------------------------------------------
+   BOTÃO DA HEADER
+-------------------------------------------------------------------------- */
+
+.header .btn,
+.nav .btn {
+    width: auto;
+
+    min-height: 0;
+
+    padding: 9px 14px;
+
+    font-size: .82rem;
+}
+
+
+.menu .btn {
+    width: 100%;
+
+    max-width: 280px;
+
+    margin-top: 10px;
+}
+
+
+/* --------------------------------------------------------------------------
+   BOTÃO DA HEADER
+-------------------------------------------------------------------------- */
+
+.header .btn,
+.nav .btn {
+    width: auto;
+
+    min-height: 0;
+
+    padding: 9px 14px;
+
+    font-size: .82rem;
+}
+
+.menu .btn {
+    width: 100%;
+
+    max-width: 280px;
+
+    margin-top: 10px;
+}
 
     /* --------------------------------------------------------------------------
        HERO
