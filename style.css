@@ -1232,7 +1232,7 @@ h3 {
     position:absolute;
     inset:0;
 
-    background-image:url("img/bg.png");
+    background-image:url("bg.png");
     background-repeat:repeat;
     background-size:700px;
 
@@ -1272,7 +1272,7 @@ h3 {
     width:350px;
     height:350px;
 
-    background:url("img/floral roxo.png") no-repeat;
+    background:url("floral roxo.png") no-repeat;
     background-size:contain;
 
     opacity:80;
@@ -1385,7 +1385,7 @@ h3 {
     width: 350px;
     height: 350px;
 
-    background: url("img/floral verde.png") no-repeat center;
+    background: url("floral verde.png") no-repeat center;
     background-size: contain;
 
     opacity: 80;
@@ -1439,7 +1439,7 @@ h3 {
     position:absolute;
     inset:0;
 
-    background-image:url("img/bg.png");
+    background-image:url("bg.png");
     background-repeat:repeat;
     background-size:700px;
 
@@ -1519,7 +1519,7 @@ h3 {
     width:100%;
     height:200px; 
 
-    background:url("img/div.png") repeat-x 80px bottom;
+    background:url("div.png") repeat-x 80px bottom;
     background-size:auto 200px;
 
     opacity: 0.5;
@@ -1567,7 +1567,7 @@ h3 {
     position: absolute;
     inset: 0;
 
-    background-image: url("img/bg.png");
+    background-image: url("bg.png");
     background-repeat: repeat;
     background-size: 700px;
 
@@ -1814,7 +1814,7 @@ h3 {
     width: 260px;
     height: 260px;
 
-    background: url("img/floral\ verde\ 2.png")
+    background: url("floral verde 2.png")
         no-repeat
         center;
 
@@ -1887,7 +1887,7 @@ background: var(--background-alt);
     position: absolute;
     inset: 0;
 
-    background-image: url("img/bg2.png");
+    background-image: url("bg2.png");
     background-repeat: repeat;
     background-size: 700px;
 
@@ -1923,7 +1923,7 @@ background: var(--background-alt);
     width:260px;
     height:260px;
 
-    background:url("img/floral\ roxo\ 2.png") no-repeat center;
+    background:url("floral roxo 2.png") no-repeat center;
     background-size:contain;
     opacity: 0.8;
 
@@ -2276,7 +2276,7 @@ background: var(--background-alt);
     position: absolute;
     inset: 0;
 
-    background-image: url("img/bg2.png");
+    background-image: url("bg2.png");
     background-repeat: repeat;
     background-size: 700px;
 
@@ -2507,7 +2507,7 @@ background: var(--background-alt);
     width:380px;
     height:380px;
 
-    background:url("img/flores.png") no-repeat left bottom;
+    background:url("flores.png") no-repeat left bottom;
     background-size:contain;
 
     transform:rotate(20deg);
@@ -2530,7 +2530,7 @@ background: var(--background-alt);
     width:380px;
     height:380px;
 
-    background:url("img/flores 2.png") no-repeat right bottom;
+    background:url("flores 2.png") no-repeat right bottom;
     background-size:contain;
 
     opacity:.28;
